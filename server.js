@@ -36,7 +36,7 @@ io.on('connection', socket => {
     })
   })
 })
-const PORT = 3030
+const PORT = process.env.PORT || 3030
 server.listen(PORT, () => {
   console.log(`Server Started in Port ${PORT} 🎉✨`)
 })
